@@ -5,4 +5,4 @@ all:
 	gcc -o test driver_test.c
 
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	make -C /lib/modules/3.5.4/build M=/home/paul/Documents/xu_docu/char_timer clean
