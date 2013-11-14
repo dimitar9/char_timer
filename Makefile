@@ -1,7 +1,7 @@
 obj-m += char_timer.o
 
 all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+	make -C /lib/modules/3.5.4/build M=/home/paul/Documents/xu_docu/char_timer modules
 	gcc -o test driver_test.c
 
 clean:
